@@ -1,10 +1,12 @@
 
+<Tabform></Tabform>
 <Tab 
 tabsData = {tabsData}
 />
 
 <script lang="ts">
 import Tab from './components/tab.svelte'
+import Tabform from './components/tabform.svelte';
 const tabsData = [{
     tabName: 'tab 1',
     tabText: 'Texto do primeiro tab'

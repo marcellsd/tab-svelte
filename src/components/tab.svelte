@@ -1,11 +1,15 @@
-<TabItens tabNames = {tabNamesL}
-tabTexts = {tabTextL}
+<TabItens
+tabNames = {$tabDataList.tabNameList}
+tabTexts = {$tabDataList.tabTextList}
 currentTab = {currentTab}
 />
 
 
 <script lang='ts'>
+    import { tabDataList } from '../store/tabs.store';
+
     import TabItens from './tabitens.svelte'
+
     export let tabsData: {tabName: string;tabText: string;}[]
 
     const tabNamesL = tabsData.map((tab) => tab.tabName)
